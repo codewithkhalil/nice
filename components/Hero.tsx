@@ -1,0 +1,160 @@
+const reveal = (delay: string) =>
+  `starting:opacity-0 starting:translate-y-4 opacity-100 translate-y-0 transition-all duration-700 ${delay}`;
+
+export default function Hero() {
+  return (
+    <section className="relative min-h-[100svh] flex flex-col overflow-hidden bg-ink text-paper">
+      {/* faint grid backdrop */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-50 [background-image:linear-gradient(rgba(245,243,237,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(245,243,237,0.14)_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(ellipse_at_50%_30%,black_40%,transparent_78%)]"
+      />
+
+      {/* nav */}
+      <nav className="relative z-10 flex items-center justify-between px-5 pt-7 sm:px-8 lg:px-16 gap-3">
+        <div className="flex items-center gap-2.5">
+          <span className="inline-block shrink-0 h-2.5 w-2.5 animate-nice-pulse rounded-full bg-pulse shadow-[0_0_0_3px_rgba(57,255,136,0.18)]" />
+          <span className="font-mono text-xs uppercase tracking-[0.14em] text-paper/60">
+            The Nest Innovation Park × UK Nigeria Tech Hub
+          </span>
+        </div>
+        <a
+          href="#apply"
+          className="rounded-full whitespace-nowrap border border-white/10 px-4.5 py-2 font-mono text-xs uppercase tracking-[0.14em] text-paper transition-colors hover:bg-white/5"
+        >
+          Join the pilot
+        </a>
+      </nav>
+
+      {/* hero content */}
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-10 pt-12 sm:px-8 lg:px-16">
+        <div className={`mb-5 font-mono text-xs uppercase tracking-[0.14em] text-pulse ${reveal('')}`}>
+          NICE — PILOT PROGRAMME · 9 MONTHS · NG ⇄ UK
+        </div>
+
+        <h1
+          className={`max-w-4xl font-display text-[2.6rem] font-extrabold leading-[0.98] tracking-tight sm:text-6xl lg:text-8xl ${reveal(
+            'delay-[80ms]'
+          )}`}
+        >
+          Nigeria&apos;s clusters
+          <br />
+          stop working{' '}
+          <span className="bg-gradient-to-r from-indigo to-signal bg-clip-text text-transparent">
+            alone.
+          </span>
+        </h1>
+
+        <p
+          className={`mt-7 max-w-xl font-body text-base leading-relaxed text-paper/65 sm:text-lg lg:text-xl ${reveal(
+            'delay-[180ms]'
+          )}`}
+        >
+          NICE pairs Nigerian innovation clusters — ESOs, startups, hubs,
+          research centres — with UK counterparts for structured knowledge
+          mobility, expert exchange, and joint prototyping. One pilot.
+          Five clusters. Two countries.
+        </p>
+
+        <div className={`mt-10 flex flex-wrap gap-3.5 ${reveal('delay-[260ms]')}`}>
+          <a
+            href="#apply"
+            className="inline-block rounded-[10px] bg-pulse px-7 py-4 font-display text-base font-bold text-ink w-full sm:w-auto text-center transition-colors hover:bg-pulse/90"
+          >
+            Register your cluster →
+          </a>
+          <a
+            href="#programme"
+            className="inline-block rounded-[10px] border border-white/10 px-7 py-4 font-display text-base font-bold text-paper w-full sm:w-auto text-center transition-colors hover:bg-pulse/90"
+          >
+            See the 5 phases
+          </a>
+        </div>
+      </div>
+
+      {/* signature node graph — two clusters connecting across a wire */}
+      <div className="relative z-[1] w-full px-5 sm:px-8 lg:px-16">
+        <svg
+          viewBox="0 0 1200 160"
+          width="100%"
+          height="160"
+          preserveAspectRatio="xMidYMax meet"
+          aria-hidden
+          className="block"
+        >
+          <defs>
+            <linearGradient id="wire-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#3d5aff" />
+              <stop offset="100%" stopColor="#ff3b30" />
+            </linearGradient>
+          </defs>
+
+          <line
+            x1="140"
+            y1="80"
+            x2="1060"
+            y2="80"
+            stroke="url(#wire-grad)"
+            strokeWidth="1.5"
+            strokeDasharray="2 10"
+            className="animate-nice-drift"
+          />
+
+          {/* NG cluster (left) */}
+          {[
+            [90, 50],
+            [140, 80],
+            [95, 112],
+            [60, 78],
+          ].map(([cx, cy], i) => (
+            <circle
+              key={`ng-${i}`}
+              cx={cx}
+              cy={cy}
+              r={i === 1 ? 7 : 4.5}
+              fill={i === 1 ? '#3d5aff' : 'rgba(61,90,255,0.55)'}
+              className="animate-nice-pulse"
+              style={{ animationDelay: `${i * 0.2}s`, animationDuration: `${2 + i * 0.3}s` }}
+            />
+          ))}
+          <text
+            x="100"
+            y="140"
+            textAnchor="middle"
+            fill="rgba(245,243,237,0.6)"
+            className="font-mono text-sm tracking-[0.12em]"
+          >
+            NG CLUSTERS
+          </text>
+
+          {/* UK cluster (right) */}
+          {[
+            [1110, 50],
+            [1060, 80],
+            [1105, 112],
+            [1140, 78],
+          ].map(([cx, cy], i) => (
+            <circle
+              key={`uk-${i}`}
+              cx={cx}
+              cy={cy}
+              r={i === 1 ? 7 : 4.5}
+              fill={i === 1 ? '#ff3b30' : 'rgba(255,59,48,0.55)'}
+              className="animate-nice-pulse"
+              style={{ animationDelay: `${i * 0.25}s`, animationDuration: `${2.2 + i * 0.3}s` }}
+            />
+          ))}
+          <text
+            x="1100"
+            y="140"
+            textAnchor="middle"
+            fill="rgba(245,243,237,0.6)"
+            className="font-mono text-sm tracking-[0.12em]"
+          >
+            UK CLUSTERS
+          </text>
+        </svg>
+      </div>
+    </section>
+  );
+}
