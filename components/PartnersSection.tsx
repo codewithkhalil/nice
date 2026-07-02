@@ -18,14 +18,14 @@ import Image from 'next/image';
 const LOGOS = [
   {
     name: 'The Nest Innovation Technology Park',
-    role: 'Nigeria Lead',
+    // role: 'Nigeria Lead',
     src: '/the-nest.jpg',
     width: 674,
     height: 290,
   },
   {
     name: 'UK Nigeria Tech Hub',
-    role: 'UK Lead',
+    // role: 'UK Lead',
     src: '/uk-nigeria-tech-hub.jpg',
     width: 1250,
     height: 474,
@@ -75,9 +75,9 @@ export default function PartnersSection() {
                   sizes="(min-width: 640px) 33vw, 100vw"
                 />
               </div>
-              <span className="font-mono text-xs uppercase tracking-[0.14em] text-signal">
+              {/* <span className="font-mono text-xs uppercase tracking-[0.14em] text-signal">
                 {logo.role}
-              </span>
+              </span> */}
             </div>
           ))}
         </div>

@@ -1,14 +1,14 @@
 /**
  * OutcomesStats.tsx — SECTION 8: OUTCOMES
  * Client copy: stats/numbers section, big bold numbers with short labels.
- * Figures per client copy (3+ clusters / 10 ESOs / 2 prototypes / 1
- * mapping framework) — supersedes earlier deck-era numbers.
+ * Figures per client copy (5 clusters / 10 ESOs / 2 prototypes / 1
+ * mapping framework) — updated per correction: 5 pilot clusters, not 3.
  *
  * Usage: import OutcomesStats from '@/components/OutcomesStats';
  */
 
 const STATS = [
-  { value: '3+', unit: '', desc: 'Innovation clusters activated across Nigeria' },
+  { value: '5', unit: '', desc: 'Innovation clusters activated across Nigeria' },
   { value: '10', unit: 'ESOs', desc: 'Strengthened with improved innovation systems' },
   { value: '2', unit: '', desc: 'Validated prototypes co-developed with UK partners' },
   { value: '1', unit: '', desc: 'Live, national innovation cluster mapping framework' },

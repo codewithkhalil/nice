@@ -20,7 +20,7 @@ export default function ProblemSection() {
 
         <p className="mx-auto max-w-2xl font-body text-lg leading-relaxed text-paper/65">
           Nigeria&apos;s innovation ecosystem is growing fast — across
-          FinTech, Agri-Tech, Manufacturing, Cybersecurity, and more. But
+          FinTech, Agri-Tech, Manufacturing, Cyber Tech, and more. But
           our hubs, startups, and support organisations are largely
           disconnected from each other and from global best practices.
         </p>

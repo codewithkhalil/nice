@@ -45,14 +45,16 @@ export default function AboutProgramme() {
             problems.
           </p>
           <p className="font-body text-lg leading-relaxed text-ink/62">
-            It is led by{' '}
-            <strong className="text-ink">The Nest Innovation Technology Park</strong>,
+            NICE is implemented by{' '}
+            <strong className="text-ink">The Nest Innovation Technology Park</strong>{' '}
             in partnership with the{' '}
-            <strong className="text-ink">UK Tech Hub</strong> and{' '}
             <strong className="text-ink">
-              ONDI (Office of Nigerian Digital Innovation)
-            </strong>
-            .
+              United Kingdom Foreign, Commonwealth &amp; Development Office (FCDO)
+            </strong>{' '}
+            through the{' '}
+            <strong className="text-ink">Digital Access Programme</strong>, with
+            support from the{' '}
+            <strong className="text-ink">UK Tech Hub</strong>.
           </p>
         </div>
       </div>
