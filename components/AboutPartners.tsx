@@ -26,7 +26,7 @@ export default function AboutPartners() {
           ABOUT THE PARTNERS
         </div>
         <h2 className="mb-14 max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-          Who's Building This With Us.
+          Who&apos;s Building This With Us.
         </h2>
 
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">

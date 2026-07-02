@@ -10,6 +10,7 @@ import WhoItsFor from '@/components/WhoItsFor';
 import LocationsSection from '@/components/LocationsSection';
 import GainSection from '@/components/GainSection';
 import PartnersSection from '@/components/PartnersSection';
+import AboutPartners from '@/components/AboutPartners';
  
 
 
@@ -25,6 +26,7 @@ export default function Home() {
       <GainSection />
       <OutcomesStats />
       <PartnersSection />
+      <AboutPartners />
       <FaqSection />
       <CtaSection />
       <Footer />
