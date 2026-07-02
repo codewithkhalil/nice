@@ -1,13 +1,10 @@
 'use client';
 
 /**
- * FaqSection.tsx
- * Accordion FAQ pulled from NICE_FAQ.docx. Full 12-question set condensed
- * to the questions a prospective participant actually needs before
- * registering — cost, eligibility, backing, duration, what happens after.
- * (Sector list, "who's for", and expected results are already covered by
- * ScopeSection / ObjectivesGrid / OutcomesStats elsewhere on the page, so
- * they're left out here to avoid repeating the same content twice.)
+ * FaqSection.tsx — SECTION 10: FAQ
+ * Client copy: accordion/collapsible format, placed toward the bottom of
+ * the page before the final CTA. Exact Q&As per the client's landing page
+ * copy doc (supersedes the earlier draft pulled from NICE_FAQ.docx).
  *
  * Usage: import FaqSection from '@/components/FaqSection';
  * Renders with id="faq".
@@ -18,35 +15,39 @@ import { useState } from 'react';
 const FAQS = [
   {
     q: 'What is NICE?',
-    a: "A national platform that connects innovation clusters across Nigeria — innovators, hubs, ESOs, universities, investors, corporates, policymakers, and government agencies — to collaborate, share knowledge, and unlock growth together, rather than another standalone programme.",
+    a: 'A pilot programme connecting Nigerian innovation clusters with UK counterparts for knowledge exchange, expert mentorship, and joint prototyping — led by The Nest, UK Tech Hub, and ONDI.',
   },
   {
-    q: 'What problem does NICE solve?',
-    a: 'Nigeria has no shortage of innovation — what has been missing is coordination. Hubs, startups, universities, and investors often work in isolation, causing duplicated effort, missed collaboration, and weak policy coordination. NICE creates a structured platform for coordinated action.',
+    q: 'Who is it for?',
+    a: 'ESOs, innovation hubs, startups, SMEs, research institutions, and state agencies working in or around key innovation sectors in Nigeria.',
   },
   {
-    q: 'Is there a cost to join?',
-    a: 'Participation in the NICE pilot is fully funded for selected participants. There are no participation fees.',
+    q: 'Does it cost anything to participate?',
+    a: 'No. There is no participation fee. NICE is funded through The Nest, UK Tech Hub, and programme partners.',
   },
   {
-    q: 'How long does the programme run?',
-    a: 'The pilot runs over several months, covering ecosystem mapping, stakeholder engagement, learning exchanges, and documentation. The long-term vision extends well beyond the pilot, into a sustaining national platform.',
+    q: 'What sectors are covered?',
+    a: 'The pilot focuses on Agri-Tech (Kano), Light Manufacturing (Aba), and Cybersecurity (Abuja). Other sectors are mapped for future expansion.',
   },
   {
-    q: 'What does participation actually involve?',
-    a: 'Ecosystem mapping, stakeholder dialogues, learning exchanges between clusters, workshops, collaborative problem-solving, policy engagement, networking, and showcasing initiatives — practical and action-oriented, not just attendance.',
+    q: 'How long is the programme?',
+    a: 'NICE is a 6-month pilot programme.',
+  },
+  {
+    q: 'What does participation involve?',
+    a: 'Being onboarded into a cluster, joining virtual expert clinics, hosting or visiting an Expert-in-Residence, and participating in an in-person innovation sprint.',
+  },
+  {
+    q: 'What happens after the pilot?',
+    a: 'Each cluster sets up its own governance — a Coordinator and Council — ensuring the network and momentum continue independently.',
   },
   {
     q: 'Who is backing this programme?',
-    a: 'Implemented by The Nest Innovation Technology Park, in partnership with the UK Foreign, Commonwealth & Development Office (FCDO) through the Digital Access Programme, with support from the UK Tech Hub.',
-  },
-  {
-    q: 'What happens after the pilot ends?',
-    a: 'Insights and successful models from the pilot inform a long-term national innovation cluster framework — expanding to more states and sectors, and building a self-sustaining national community of practice.',
+    a: 'The Nest Innovation Technology Park, UK Tech Hub, Innovate UK/ONDI, NITDA, ONSA, and leading Nigerian and UK universities.',
   },
   {
     q: 'How do I get involved?',
-    a: 'Email contactus@thenest.ng, call +234 809 055 4170, or visit www.thenest.ng.',
+    a: 'Send us an email, give us a call, or fill in the interest form on this page. Details below.',
   },
 ];
 
@@ -60,10 +61,10 @@ export default function FaqSection() {
     >
       <div className="mx-auto max-w-4xl">
         <div className="mb-4.5 font-mono text-xs uppercase tracking-[0.14em] text-pulse">
-          FAQ
+          FREQUENTLY ASKED QUESTIONS
         </div>
         <h2 className="mb-14 max-w-xl font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-          Before you register, the short answers.
+          Got Questions? We Have Answers.
         </h2>
 
         <ul className="m-0 list-none divide-y divide-white/10 border-y border-white/10 p-0">

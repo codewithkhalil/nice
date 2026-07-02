@@ -1,6 +1,7 @@
 /**
  * Footer.tsx
- * Contact + socials, echoing the deck's closing "Thank you" slide.
+ * Socials block per client copy (Twitter/X: @thenesthub,
+ * Instagram: @nesthubng, plus LinkedIn from the linked socials list).
  *
  * Usage: import Footer from '@/components/Footer';
  */
@@ -18,19 +19,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-1.5">
           <span className="font-mono text-xs uppercase tracking-[0.14em] text-paper/60">
-            CONTACT
-          </span>
-          <a href="mailto:contactus@thenest.ng" className="font-body text-paper no-underline hover:underline">
-            contactus@thenest.ng
-          </a>
-          <a href="https://www.thenest.ng" className="font-body text-paper no-underline hover:underline">
-            www.thenest.ng
-          </a>
-        </div>
-
-        <div className="flex flex-col gap-1.5">
-          <span className="font-mono text-xs uppercase tracking-[0.14em] text-paper/60">
-            SOCIAL
+            SOCIALS
           </span>
           <a
             href="https://www.linkedin.com/company/the-nest-innovation-park/"
@@ -39,21 +28,21 @@ export default function Footer() {
             LinkedIn
           </a>
           <a href="https://x.com/nesthubng" className="font-body text-paper no-underline hover:underline">
-            X / Twitter
+            Twitter/X · @thenesthub
           </a>
           <a
             href="https://www.instagram.com/thenesthub"
             className="font-body text-paper no-underline hover:underline"
           >
-            Instagram
+            Instagram · @nesthubng
           </a>
         </div>
       </div>
 
       <div className="mx-auto mt-10 max-w-6xl border-t border-white/10 pt-6 font-mono text-xs text-paper/60">
-        An initiative of the Digital Access Programme (DAP) · Funded by UK
-        International Development · Implemented by The Nest Innovation
-        Technology Park
+        A programme by the UK-Nigeria Tech Hub, an initiative of the
+        Digital Access Programme (DAP) under the UK Government&apos;s
+        Foreign, Commonwealth and Development Office (FCDO).
       </div>
     </footer>
   );

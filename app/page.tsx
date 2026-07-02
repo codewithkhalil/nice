@@ -1,28 +1,32 @@
 import Hero from '@/components/Hero';
 import ProblemSection from '@/components/ProblemSection';
-import ObjectivesGrid from '@/components/ObjectivesGrid';
 import PhasesTimeline from '@/components/PhasesTimeline';
-import ScopeSection from '@/components/ScopeSection';
 import OutcomesStats from '@/components/OutcomesStats';
 import CtaSection from '@/components/CtaSection';
-import AboutNest from '@/components/AboutNest';
 import Footer from '@/components/Footer';
 import FaqSection from '@/components/FaqSection';
+import AboutProgramme from '@/components/AboutProgramme';
+import WhoItsFor from '@/components/WhoItsFor';
+import LocationsSection from '@/components/LocationsSection';
+import GainSection from '@/components/GainSection';
+import PartnersSection from '@/components/PartnersSection';
  
 
 
 export default function Home() {
   return (
-    <main style={{ fontFamily: 'var(--font-body)' }}>
+    <main className='font-body'>
       <Hero />
       <ProblemSection />
-      <ObjectivesGrid />
+      <AboutProgramme />
+      <WhoItsFor />
       <PhasesTimeline />
-      <ScopeSection />
+      <LocationsSection />
+      <GainSection />
       <OutcomesStats />
+      <PartnersSection />
       <FaqSection />
       <CtaSection />
-      <AboutNest />
       <Footer />
     </main>
   );

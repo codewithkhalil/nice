@@ -1,46 +1,48 @@
 /**
- * CtaSection.tsx
- * Final call to action — "Join Us" from the carousel deck, rendered as
- * a full-bleed high-contrast close. Renders with id="apply" for the
- * Hero's anchor link.
+ * CtaSection.tsx — SECTION 11: FINAL CTA
+ * Client copy: full-width closing section, bold, warm, action-focused,
+ * dark background. Contact details rendered here per copy; full socials
+ * block lives in Footer.tsx directly below.
  *
  * Usage: import CtaSection from '@/components/CtaSection';
+ * Renders with id="get-involved".
  */
 
 export default function CtaSection() {
   return (
     <section
-      id="apply"
-      className="relative overflow-hidden bg-paper px-5 py-24 text-ink sm:px-8 sm:py-32 lg:px-16 lg:py-40"
+      id="get-involved"
+      className="relative overflow-hidden bg-ink px-5 py-24 text-paper sm:px-8 sm:py-32 lg:px-16 lg:py-40"
     >
       <div className="relative mx-auto max-w-3xl text-center">
-        <div className="mb-5 font-mono text-xs uppercase tracking-[0.14em] text-signal">
-          NICE · REGISTRATION OPENS FOR PILOT COHORT
-        </div>
-
         <h2 className="mb-7 font-display text-4xl font-extrabold leading-[1.0] tracking-tight sm:text-5xl lg:text-7xl">
-          Collaborate for the future {" "}
-          {/* <br className="hidden sm:block" /> */}
-          of innovation in Nigeria.
+          Ready to Build Nigeria&apos;s Innovation Future?
         </h2>
 
-        <p className="mx-auto mb-11 max-w-lg font-body text-lg leading-relaxed text-ink/62">
-          If you run an ESO, hub, startup, or research centre in one of our
-          five sectors, this is the pilot cohort to be part of.
+        <p className="mx-auto mb-11 max-w-xl font-body text-lg leading-relaxed text-paper/65">
+          Whether you&apos;re a hub, a startup, a university, or a
+          government agency — if you&apos;re building something that
+          matters, NICE is for you.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3.5">
+        <div className="mb-14 flex flex-wrap justify-center gap-3.5">
           <a
-            href="mailto:contactus@thenest.ng?subject=NICE%20Pilot%20-%20Cluster%20Registration"
-            className="inline-block rounded-[10px] bg-ink px-8 py-4.5 font-display text-base font-bold text-paper w-full sm:w-auto text-center transition-colors hover:bg-ink/90"
+            href="#locations"
+            className="inline-block rounded-[10px] bg-pulse px-8 py-4.5 font-display text-base font-bold text-ink"
           >
-            Register your cluster →
+            Read More About Our Clusters
           </a>
-          <a
-            href="tel:+2348090554170"
-            className="inline-block rounded-[10px] border-[1.5px] border-ink px-8 py-4.5 font-display text-base font-bold text-ink w-full sm:w-auto text-center transition-colors hover:bg-ink/90 hover:text-white"
-          >
-            +234 809 055 4170
+        </div>
+
+        <div className="flex flex-col items-center gap-2 font-mono text-sm text-paper/70">
+          <a href="mailto:contactus@thenest.ng" className="hover:underline">
+            📧 contactus@thenest.ng
+          </a>
+          <a href="tel:+2348090554170" className="hover:underline">
+            📞 +234 809 055 4170
+          </a>
+          <a href="https://www.thenest.ng" className="hover:underline">
+            🌐 www.thenest.ng
           </a>
         </div>
       </div>
